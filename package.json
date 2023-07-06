@@ -1,7 +1,7 @@
 {
-  "name": "onnurmark",
-  "displayName": "onnurmark",
-  "description": "",
+  "name": "vscode-onnurmark",
+  "displayName": "vscode-onnurmark",
+  "description": "onnurmark language support for vscode",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.79.0"
@@ -10,16 +10,24 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "onnurmark",
-      "aliases": ["onnurmark", "onnurmark"],
-      "extensions": [".onm"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "onnurmark",
-      "scopeName": "",
-      "path": "./syntaxes/onnurmark.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "onnurmark",
+        "aliases": [
+          "onnurmark"
+        ],
+        "extensions": [
+          ".onm"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "onnurmark",
+        "scopeName": "text.onnurmark",
+        "path": "./syntaxes/onnurmark.tmLanguage.json"
+      }
+    ]
   }
 }
